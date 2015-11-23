@@ -14,5 +14,5 @@ data = '''
 
 #ET.fromstring is the deserialization for parsing the XML paragragh into what we are looing for
 tree = ET.fromstring(data)
-print 'Name:',tree.find('name').text
-print 'Attr:',tree.find('email').get('hide')
+print 'Name:',tree.find('name').text # to retrieve the content in the "name" tag
+print 'Attr:',tree.find('email').get('hide') # to retrieve the attribute inside the tag
